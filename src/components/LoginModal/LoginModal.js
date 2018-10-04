@@ -1,16 +1,10 @@
 import React, { Component } from "react";
 import "./LoginModal.css";
 var passport = require('passport');
-//var Strategy = require('passport-local').Strategy;
 
 
 
 export default class LoginModal extends Component  {
-    constructor(props)
-    {
-        super(props)
-        //var showHideClassName = 
-    }
     
 
     render (){
