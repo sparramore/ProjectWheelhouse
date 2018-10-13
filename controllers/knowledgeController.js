@@ -1,12 +1,15 @@
-const db = require("../models");
+const db = require("../models/knowledge/");
 
 
 module.exports = {
     findAll: function(req, res) {
       db.Knowledge
-        .find(req.query)
-        .sort({Skill: asc })
-        .then(dbModel => res.json(dbModel))
+        .find( {})
+        .sort("asc")
+        .then(function(dbModel){
+          res.json(dbModel);
+          
+        })
         .catch(err => res.status(422).json(err));
     },
     findById: function(req, res) {

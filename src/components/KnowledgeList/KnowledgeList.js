@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./KnowledgeList.css";
 import KnowledgeBubble from "./KnowledgeBubble"
+import API from "../../utils/API";
 
 /*
 pull information for all of the knowledge from the database
@@ -24,6 +25,10 @@ export default class KnowledgeList extends Component  {
         // }
 
     };
+
+    componentDidMount() {
+        
+      }
 
     render (){
         return(
